@@ -1,0 +1,352 @@
+body{
+    background-image: url("grass.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+*
+{
+  padding:0px;
+  box-sizing:border-box;
+}
+
+
+.btn:link,
+.btn:visited{
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+    padding:10px 20px;
+    color:black;
+    transition: all 0.2s;
+    background-color: "yellowgreen"
+    
+
+}
+.wrongInput{
+  text-transform: uppercase;
+ font-family:'Wendy One', sans-serif;
+ color: white;
+  font-size:20px;
+  letter-spacing:3px;
+  margin:5px;
+}
+
+.btn:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.btn:active{
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  }
+
+/* @font-face { */
+  /* font-family:Serpens; a name to be used later */
+  /* src: url('Serpens.ttf'); URL to font */
+/* } */
+
+/* @font-face { */
+  /* font-family:Crazy Dots; /*a name to be used later*/
+  /* src: url('Crazy Dots.ttf'); URL to font */ 
+/* } */
+
+
+.image
+{
+  display: inline-block;
+  width:30px;
+  height:150px;
+}
+
+
+.canvas
+{
+    margin-top: 2.5em;
+  box-sizing:border-box;
+  border: 15px solid yellowgreen;
+  position:absolute;
+  top:27px;
+  left:90px;
+  background-color:black;
+  display:none;
+
+
+}
+
+.modal-1
+{
+    margin-top: 4em;
+  height:100vh;
+  width:100vw;
+  /* z-index:2; */
+  position: fixed;
+  top:0px;
+  left:0px;
+/*<<<<<<< HEAD*/
+  /* background-color:grey; */
+  /*
+     animation-name: moveInLeft;
+  animation-duration: 1s;
+  /animation-timing-function: ease-out;*/
+
+/*=======*/
+  background-image:url("grass.jpg");
+  background-size:cover;
+  background-position:center;
+
+/*>>>>>>> bc0b1c6addff8533afe0616e0eb982d0e21c1528*/
+}
+
+.modal-2
+{
+  height:100vh;
+  width:100vw;
+  z-index:1;
+  position: fixed;
+  top:0px;
+  left:0px;
+  background-image:url("grass.jpg");
+  background-size:cover;
+  background-position:center;
+
+
+}
+
+.modal-3
+{
+  height:100vh;
+  width:100vw;
+  z-index:1;
+  position: fixed;
+  top:0px;
+  left:0px;
+  background-color:rgba(192,192,192,0.7);
+  background-image:url("grass.jpg");
+  background-size:cover;
+  background-position:center;
+}
+
+
+
+.modal-content
+{
+  position: absolute;
+  left:50%;
+  top:50%;
+  width:900px;
+  height:500px;
+  /* background-color:rgba(192,192,192,0.2); */
+  transform:translate(-50%,-50%);
+  border-radius:8px;
+  text-align:center;
+
+}
+
+.user-screen
+{
+    padding-top: 1.2em;
+    position:fixed;
+    left:100px;
+    top:8px;
+    font-size:15px;
+    border-radius:4px;
+    color:black !important;
+    background-color:white;
+    text-decoration:underline;
+}
+
+.score-screen
+{
+    padding-top: 1.2em;
+    position:fixed;
+    right:100px;
+    top:8px;
+    font-size:15px;
+    border-radius:4px;
+    top:8px;
+    color:black !important;
+    background-color:white;
+    text-decoration:underline;
+}
+
+/*<<<<<<< HEAD*/
+
+
+.primary-head
+{
+  font-family:Crazy Dots;
+  font-size:100px;
+  color:white;
+  letter-spacing:4px;
+  margin:5px;
+animation:moveInLeft 1s ease-out;
+}
+
+.tertiary-head
+{
+    margin-bottom: 4em;
+  color:whitesmoke;
+  font-family: 'Monoton',cursive;
+  letter-spacing:3px;
+   animation:moveInLeft 1s ease-out;
+
+}
+
+.secondary-head
+{
+  font-family:'Wendy One', sans-serif;
+  font-size:60px;
+  letter-spacing:3px;
+  margin:5px;
+  animation:moveInRight 1s ease-out;
+   
+}
+
+.text-field
+{
+  background-color:black;
+  width:220px;
+  height:40px;
+  color:white;
+  font-size:30px;
+  font-family:'Wendy One', sans-serif;
+   animation:moveInBottom 1s ease-out 0.75s;
+   animation-fill-mode: backwards;
+
+
+}
+.animate{
+   animation:moveInBottom 1s ease-out 0.75s;
+  animation-fill-mode: backwards;
+
+}
+.username{
+  text-transform: uppercase;
+   animation:moveInBottom 1s ease-out 0.75s;
+  animation-fill-mode: backwards;
+}
+
+.button
+{
+  margin:0px;
+  cursor: pointer;
+  box-sizing:border-box;
+  padding:5px;
+  font-size:20px;
+  height:40px;
+  border-radius:10px;
+  color:black;
+  background-color:grey;
+  font-family:'Wendy One', sans-serif;
+   animation:moveInBottom 1s ease-out 0.75s;
+   animation-fill-mode: backwards;
+
+}
+.start-button{
+  animation-delay: 0s;
+}
+.button:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.button:active{
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+.list
+{
+  list-style:none;
+  font-family: 'Indie Flower', cursive;
+  text-align: left;
+  font-size:22px;
+  background-color:yellow;
+  animation:moveInRight 1s ease-out;
+
+
+}
+
+.element
+{
+  display:block;
+}
+
+.status
+{
+  background-color:yellowgreen;
+
+}
+
+
+
+
+/*
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+*/
+
+/*>>>>>>> bc0b1c6addff8533afe0616e0eb982d0e21c1528*/
+
+@keyframes moveInRight{
+  0%{
+     opacity:0;
+     transform: translateX(100px);
+
+  }
+
+    80%{
+    transform: translateX(-10px);
+    }
+
+  100%{
+    opacity:1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInLeft{
+  0%{
+     opacity:0;
+     transform: translateX(-100px);
+
+  }
+
+    80%{
+    transform: translateX(10px);
+    }
+
+  100%{
+    opacity:1;
+    transform: translate(0);
+  }
+}
+@keyframes moveInBottom{
+  0%{
+     opacity:0;
+     transform: translateY(100px);
+
+  }
+
+  100%{
+    opacity:1;
+    transform: translate(0);
+  }}
+
+  @keyframes moveOut{
+  0%{
+     opacity:0;
+     transform: translateZ(100px);
+
+  }
+
+  100%{
+    opacity:1;
+    transform: translate(0);
+  }
+}
